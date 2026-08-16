@@ -94,7 +94,7 @@ export const DICT = {
       en: "If what you've seen interests you, the keyboard is ready for the first message.",
     },
     copyEmail: { ar: "نسخ البريد الإلكتروني", en: "Copy email" },
-    openMail: { ar: "إرسال رسالة", en: "Open mailto" },
+    openMail: { ar: "إرسال بريد إلكتروني", en: "Send Email" },
     github: { ar: "GitHub", en: "GitHub" },
     linkedin: { ar: "LinkedIn", en: "LinkedIn" },
     emailToast: { ar: "تم نسخ البريد الإلكتروني", en: "Email copied" },

@@ -177,149 +177,149 @@ const experiences: Array<{
   bullets: Localised[];
   stack: string[];
 }> = [
-  {
-    role: {
-      ar: "مطور ويب ومهندس IoT",
-      en: "Web Developer & IoT Engineer",
-    },
-    company: "Smart Cloud",
-    period: { ar: "أيار 2026 — الحالي", en: "May 2026 — Present" },
-    location: { ar: "الأردن", en: "Jordan" },
-    summary: {
-      ar: "بناء وتطوير مسارات معالجة البيانات اللحظية المعتمدة على Event-Driven Architectures لتحليل قراءات الأجهزة عالية التردد. تصميم منطق التحويلات والحقول المحسوبة، وإنشاء عناصر تحكم وقياس سريعة الاستجابة مع دمج نماذج الذكاء الاصطناعي بلغة Python.",
-      en: "Engineered scalable real-time data ingestion and processing pipelines using event-driven architectures for high-frequency telemetry. Designed data transformation logic, built low-latency visualization widgets, and integrated Python AI/ML models into backend pipelines.",
-    },
-    bullets: [
-      {
-        ar: "مسارات معالجة واستقبال بيانات أجهزة IoT عالية التردد في الوقت الفعلي.",
-        en: "Real-time telemetry data ingestion and event-driven processing pipelines.",
+    {
+      role: {
+        ar: "مطور ويب ومهندس IoT",
+        en: "Web Developer & IoT Engineer",
       },
-      {
-        ar: "منطق تحويل البيانات الفوري وإنشاء الحقول المحسوبة المخصصة.",
-        en: "On-the-fly data transformation logic and custom calculated fields.",
+      company: "Smart Cloud",
+      period: { ar: "أيار 2026 — الحالي", en: "May 2026 — Present" },
+      location: { ar: "الأردن", en: "Jordan" },
+      summary: {
+        ar: "بناء وتطوير مسارات معالجة البيانات اللحظية المعتمدة على Event-Driven Architectures لتحليل قراءات الأجهزة عالية التردد. تصميم منطق التحويلات والحقول المحسوبة، وإنشاء عناصر تحكم وقياس سريعة الاستجابة مع دمج نماذج الذكاء الاصطناعي بلغة Python.",
+        en: "Engineered scalable real-time data ingestion and processing pipelines using event-driven architectures for high-frequency telemetry. Designed data transformation logic, built low-latency visualization widgets, and integrated Python AI/ML models into backend pipelines.",
       },
-      {
-        ar: "عناصر عرض ولوحات تحليلات عالية الأداء وسريعة الاستجابة.",
-        en: "Low-latency data-visualization widgets and analytics dashboards.",
-      },
-      {
-        ar: "اختبارات برمجية شاملة بلغة Python ودمج نماذج التعلم الآلي للتنبؤ.",
-        en: "Python unit-testing suites and integrated AI/ML predictive analytics models.",
-      },
-    ],
-    stack: [
-      "Python",
-      "IoT Telemetry",
-      "Event-Driven Pipelines",
-      "AI/ML",
-      "Dashboards",
-      "PostgreSQL",
-    ],
-  },
-  {
-    role: {
-      ar: "متدرب تطوير ويب Full Stack",
-      en: "Full Stack Web Development Intern",
+      bullets: [
+        {
+          ar: "مسارات معالجة واستقبال بيانات أجهزة IoT عالية التردد في الوقت الفعلي.",
+          en: "Real-time telemetry data ingestion and event-driven processing pipelines.",
+        },
+        {
+          ar: "منطق تحويل البيانات الفوري وإنشاء الحقول المحسوبة المخصصة.",
+          en: "On-the-fly data transformation logic and custom calculated fields.",
+        },
+        {
+          ar: "عناصر عرض ولوحات تحليلات عالية الأداء وسريعة الاستجابة.",
+          en: "Low-latency data-visualization widgets and analytics dashboards.",
+        },
+        {
+          ar: "اختبارات برمجية شاملة بلغة Python ودمج نماذج التعلم الآلي للتنبؤ.",
+          en: "Python unit-testing suites and integrated AI/ML predictive analytics models.",
+        },
+      ],
+      stack: [
+        "Python",
+        "IoT Telemetry",
+        "Event-Driven Pipelines",
+        "AI/ML",
+        "Dashboards",
+        "PostgreSQL",
+      ],
     },
-    company: "Hikayatajloun (Orange Coding Academy)",
-    period: { ar: "أيار 2025 — حزيران 2025", en: "May 2025 — June 2025" },
-    location: { ar: "الأردن", en: "Jordan" },
-    summary: {
-      ar: "فترة تدريب في تطوير حلول ويب مجتمعية باستخدام HTML, CSS, JavaScript, و ASP.NET Core. التعاون مع فرق متعددة التخصصات وتطبيق منهجيات Agile ومراجعات الكود.",
-      en: "Built community-centered web solutions using HTML, CSS, JavaScript, and ASP.NET Core. Collaborated with cross-functional teams using Agile methodologies, Git, Trello, pair programming, and code reviews.",
-    },
-    bullets: [
-      {
-        ar: "تطوير ميزات كاملة للموقع باستخدام ASP.NET Core و JavaScript.",
-        en: "Developed full-stack features using ASP.NET Core MVC and JavaScript.",
+    {
+      role: {
+        ar: "متدرب تطوير ويب Full Stack",
+        en: "Full Stack Web Development Intern",
       },
-      {
-        ar: "تطبيق منهجيات Agile، البرمجة الثنائية اليومية ومراجعة الكود.",
-        en: "Applied Agile methodologies, daily pair programming, and code reviews.",
+      company: "Hikayatajloun (Orange Coding Academy)",
+      period: { ar: "أيار 2025 — حزيران 2025", en: "May 2025 — June 2025" },
+      location: { ar: "الأردن", en: "Jordan" },
+      summary: {
+        ar: "فترة تدريب في تطوير حلول ويب مجتمعية باستخدام HTML, CSS, JavaScript, و ASP.NET Core. التعاون مع فرق متعددة التخصصات وتطبيق منهجيات Agile ومراجعات الكود.",
+        en: "Built community-centered web solutions using HTML, CSS, JavaScript, and ASP.NET Core. Collaborated with cross-functional teams using Agile methodologies, Git, Trello, pair programming, and code reviews.",
       },
-    ],
-    stack: ["ASP.NET Core", "C#", "JavaScript", "HTML/CSS", "Git", "Agile"],
-  },
-  {
-    role: {
-      ar: "متدرب تطوير الويب الشامل Full Stack",
-      en: "Full Stack Web Development Trainee",
+      bullets: [
+        {
+          ar: "تطوير ميزات كاملة للموقع باستخدام ASP.NET Core و JavaScript.",
+          en: "Developed full-stack features using ASP.NET Core MVC and JavaScript.",
+        },
+        {
+          ar: "تطبيق منهجيات Agile، البرمجة الثنائية اليومية ومراجعة الكود.",
+          en: "Applied Agile methodologies, daily pair programming, and code reviews.",
+        },
+      ],
+      stack: ["ASP.NET Core", "C#", "JavaScript", "HTML/CSS", "Git", "Agile"],
     },
-    company: "Orange Coding Academy (Simplon.co & PSUT)",
-    period: { ar: "كانون الأول 2024 — أيار 2025", en: "Dec 2024 — May 2025" },
-    location: { ar: "إربد، الأردن", en: "Irbid, Jordan" },
-    summary: {
-      ar: "معسكر تدريبي مكثف في تطوير الويب بالتعاون مع Simplon.co وجامعة الأميرة سمية للتكنولوجيا. تطوير 7 مشاريع ويب كاملة والقيام بدور Scrum Master و Product Owner.",
-      en: "Intensive 6-month full-stack development bootcamp in collaboration with Simplon.co and PSUT. Developed 7 full-stack web applications and served as Scrum Master and Product Owner across projects.",
-    },
-    bullets: [
-      {
-        ar: "بناء واجهات تجاوبية وخدمات خلفية آمنة باستخدام ASP.NET Core و SQL Server.",
-        en: "Responsive frontends and secure backend APIs with ASP.NET Core & SQL Server.",
+    {
+      role: {
+        ar: "متدرب تطوير الويب الشامل Full Stack",
+        en: "Full Stack Web Development Trainee",
       },
-      {
-        ar: "قيادة الفرق بدور Scrum Master و Product Owner وتنظيم فترات الـ Sprints.",
-        en: "Served as Scrum Master and Product Owner facilitating requirement gathering and sprint ceremonies.",
+      company: "Orange Coding Academy (Simplon.co & PSUT)",
+      period: { ar: "كانون الأول 2024 — أيار 2025", en: "Dec 2024 — May 2025" },
+      location: { ar: "إربد، الأردن", en: "Irbid, Jordan" },
+      summary: {
+        ar: "معسكر تدريبي مكثف في تطوير الويب بالتعاون مع Simplon.co وجامعة الأميرة سمية للتكنولوجيا. تطوير 7 مشاريع ويب كاملة والقيام بدور Scrum Master و Product Owner.",
+        en: "Intensive 6-month full-stack development bootcamp in collaboration with Simplon.co and PSUT. Developed 7 full-stack web applications and served as Scrum Master and Product Owner across projects.",
       },
-    ],
-    stack: [
-      "Angular",
-      "ASP.NET Core",
-      "SQL Server",
-      "C#",
-      "Bootstrap",
-      "Scrum Master",
-    ],
-  },
-  {
-    role: {
-      ar: "مستشار كفاءة الطاقة",
-      en: "Energy Efficiency Consultant",
+      bullets: [
+        {
+          ar: "بناء واجهات تجاوبية وخدمات خلفية آمنة باستخدام ASP.NET Core و SQL Server.",
+          en: "Responsive frontends and secure backend APIs with ASP.NET Core & SQL Server.",
+        },
+        {
+          ar: "قيادة الفرق بدور Scrum Master و Product Owner وتنظيم فترات الـ Sprints.",
+          en: "Served as Scrum Master and Product Owner facilitating requirement gathering and sprint ceremonies.",
+        },
+      ],
+      stack: [
+        "Angular",
+        "ASP.NET Core",
+        "SQL Server",
+        "C#",
+        "Bootstrap",
+        "Scrum Master",
+      ],
     },
-    company: "UNDP",
-    period: { ar: "أيلول 2023 — شباط 2024", en: "Sep 2023 — Feb 2024" },
-    location: { ar: "الأردن", en: "Jordan" },
-    summary: {
-      ar: "تقديم الاستشارات ودمج تقنيات كفاءة الطاقة في مشاريع الهندسة الكهربائية وإجراء التقييمات الفنية الميدانية.",
-      en: "Advised on and integrated energy-efficiency technologies across electrical engineering projects and conducted technical compliance assessments.",
-    },
-    bullets: [
-      {
-        ar: "تقييمات ميدانية لضمان المطابقة مع الكودات الوطنية للكهرباء والطاقة.",
-        en: "On-site assessments to ensure compliance with national engineering codes.",
+    {
+      role: {
+        ar: "مستشار كفاءة الطاقة",
+        en: "Energy Efficiency Consultant",
       },
-    ],
-    stack: [
-      "Energy Efficiency",
-      "Electrical Engineering",
-      "Technical Advisory",
-    ],
-  },
-  {
-    role: {
-      ar: "مهندس كهرباء",
-      en: "Electrical Engineer",
-    },
-    company: "Ministry of Local Administration",
-    period: { ar: "نيسان 2022 — آذار 2024", en: "Apr 2022 — Mar 2024" },
-    location: { ar: "الأردن", en: "Jordan" },
-    summary: {
-      ar: "الإشراف على التزام المجالس المحلية بالأنظمة وتنسيق عمل الفرق لرفع كفاءة العمليات الإدارية والتشغيلية.",
-      en: "Supervised regulatory compliance for local councils and coordinated cross-department teams to improve administrative and operational efficiency.",
-    },
-    bullets: [
-      {
-        ar: "الإشراف التنظيمي وتنسيق الفرق المتعددة لرفع الكفاءة التشغيلية.",
-        en: "Supervised regulatory compliance and coordinated cross-department teams for operational efficiency.",
+      company: "UNDP",
+      period: { ar: "أيلول 2023 — شباط 2024", en: "Sep 2023 — Feb 2024" },
+      location: { ar: "الأردن", en: "Jordan" },
+      summary: {
+        ar: "تقديم الاستشارات ودمج تقنيات كفاءة الطاقة في مشاريع الهندسة الكهربائية وإجراء التقييمات الفنية الميدانية.",
+        en: "Advised on and integrated energy-efficiency technologies across electrical engineering projects and conducted technical compliance assessments.",
       },
-    ],
-    stack: [
-      "Electrical Engineering",
-      "Regulatory Compliance",
-      "Project Management",
-    ],
-  },
-];
+      bullets: [
+        {
+          ar: "تقييمات ميدانية لضمان المطابقة مع الكودات الوطنية للكهرباء والطاقة.",
+          en: "On-site assessments to ensure compliance with national engineering codes.",
+        },
+      ],
+      stack: [
+        "Energy Efficiency",
+        "Electrical Engineering",
+        "Technical Advisory",
+      ],
+    },
+    {
+      role: {
+        ar: "مهندس كهرباء",
+        en: "Electrical Engineer",
+      },
+      company: "Ministry of Local Administration",
+      period: { ar: "نيسان 2022 — آذار 2024", en: "Apr 2022 — Mar 2024" },
+      location: { ar: "الأردن", en: "Jordan" },
+      summary: {
+        ar: "الإشراف على التزام المجالس المحلية بالأنظمة وتنسيق عمل الفرق لرفع كفاءة العمليات الإدارية والتشغيلية.",
+        en: "Supervised regulatory compliance for local councils and coordinated cross-department teams to improve administrative and operational efficiency.",
+      },
+      bullets: [
+        {
+          ar: "الإشراف التنظيمي وتنسيق الفرق المتعددة لرفع الكفاءة التشغيلية.",
+          en: "Supervised regulatory compliance and coordinated cross-department teams for operational efficiency.",
+        },
+      ],
+      stack: [
+        "Electrical Engineering",
+        "Regulatory Compliance",
+        "Project Management",
+      ],
+    },
+  ];
 
 const certifications: Array<{
   title: Localised;
@@ -327,41 +327,41 @@ const certifications: Array<{
   year?: string;
   badge?: Localised;
 }> = [
-  {
-    title: {
-      ar: "برنامج الجاهزية والمهارات في الأمن السيبراني",
-      en: "Cybersecurity Skills Readiness Program",
+    {
+      title: {
+        ar: "برنامج الجاهزية والمهارات في الأمن السيبراني",
+        en: "Cybersecurity Skills Readiness Program",
+      },
+      issuer: {
+        ar: "شركة الدائرة الخضراء للحلول البرمجية بالتعاون مع وزارة الشباب وداتاسبيس",
+        en: "Green Circle for Software Solutions in partnership with Ministry of Youth & Dataspace",
+      },
+      year: "2026",
+      badge: { ar: "الأمن السيبراني", en: "Cybersecurity" },
     },
-    issuer: {
-      ar: "شركة الدائرة الخضراء للحلول البرمجية بالتعاون مع وزارة الشباب وداتاسبيس",
-      en: "Green Circle for Software Solutions in partnership with Ministry of Youth & Dataspace",
+    {
+      title: {
+        ar: "تدريب بناء القدرات لحصر غازات الدفيئة (GHGs Inventory)",
+        en: "Capacity-Building Training for Greenhouse Gases (GHGs) Inventory",
+      },
+      issuer: {
+        ar: "برنامج التدريب والتطوير البيئي والهندسي",
+        en: "Greenhouse Gases Technical Capacity-Building Initiative",
+      },
+      badge: { ar: "استدامة وبيئة", en: "Sustainability" },
     },
-    year: "2026",
-    badge: { ar: "الأمن السيبراني", en: "Cybersecurity" },
-  },
-  {
-    title: {
-      ar: "تدريب بناء القدرات لحصر غازات الدفيئة (GHGs Inventory)",
-      en: "Capacity-Building Training for Greenhouse Gases (GHGs) Inventory",
+    {
+      title: {
+        ar: "التخطيط الحضري وحوكمة استخدام الأراضي ونظام تقييم المباني الخضراء",
+        en: "Urban Planning, Land Use Governance, and Green Building Rating System Training",
+      },
+      issuer: {
+        ar: "برنامج تدريب الحوكمة والمباني الخضراء",
+        en: "Urban Governance & Green Building Rating System Certification",
+      },
+      badge: { ar: "مباني خضراء", en: "Green Building" },
     },
-    issuer: {
-      ar: "برنامج التدريب والتطوير البيئي والهندسي",
-      en: "Greenhouse Gases Technical Capacity-Building Initiative",
-    },
-    badge: { ar: "استدامة وبيئة", en: "Sustainability" },
-  },
-  {
-    title: {
-      ar: "التخطيط الحضري وحوكمة استخدام الأراضي ونظام تقييم المباني الخضراء",
-      en: "Urban Planning, Land Use Governance, and Green Building Rating System Training",
-    },
-    issuer: {
-      ar: "برنامج تدريب الحوكمة والمباني الخضراء",
-      en: "Urban Governance & Green Building Rating System Certification",
-    },
-    badge: { ar: "مباني خضراء", en: "Green Building" },
-  },
-];
+  ];
 
 function pick<T>(loc: { ar: T; en: T }, lang: Lang): T {
   return loc[lang] ?? loc.ar;
@@ -421,18 +421,18 @@ export default function Home() {
           <div className="flex items-center gap-2 pointer-events-auto">
             <SeasonPicker />
             <span className="hidden md:inline-flex">
-            <a
-              href="https://github.com/SuleimanKh97/"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="hover"
-              className="frost-btn !py-1.5 !px-3 !text-xs"
-            >
-              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden>
-                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
-              </svg>
-              <span>GitHub</span>
-            </a>
+              <a
+                href="https://github.com/SuleimanKh97/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="hover"
+                className="frost-btn !py-1.5 !px-3 !text-xs"
+              >
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden>
+                  <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                <span>GitHub</span>
+              </a>
             </span>
             <LanguagePicker />
           </div>
@@ -480,10 +480,10 @@ export default function Home() {
                 style={{ ["--d" as string]: "700ms" }}
               >
                 <a
-                  href="/Suleiman_Khashashneh.pdf"
+                  href="/cv_en.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Suleiman_Khashashneh.pdf"
+                  download="Suleiman_Khashashneh_CV.pdf"
                   data-cursor="hover"
                   data-magnetic
                   className="frost-btn frost-btn--primary"
@@ -736,9 +736,8 @@ export default function Home() {
             >
               <span
                 aria-hidden
-                className={`watermark hidden md:block top-1/2 -translate-y-1/2 ${
-                  p.align === "left" ? "right-[-2vw]" : "left-[-2vw]"
-                }`}
+                className={`watermark hidden md:block top-1/2 -translate-y-1/2 ${p.align === "left" ? "right-[-2vw]" : "left-[-2vw]"
+                  }`}
               >
                 {p.num}
               </span>
@@ -748,10 +747,10 @@ export default function Home() {
                   p.align === "left"
                     ? "max-w-xl relative"
                     : // Right-aligned cards get extra right padding on md+ so
-                      // the action buttons ("Ver más") don't sit under the
-                      // fixed SectionNav dots on the right edge. On mobile they
-                      // collapse to a normal left-aligned full-width card.
-                      "max-w-xl relative md:ml-auto md:text-right md:mr-16 lg:mr-24"
+                    // the action buttons ("Ver más") don't sit under the
+                    // fixed SectionNav dots on the right edge. On mobile they
+                    // collapse to a normal left-aligned full-width card.
+                    "max-w-xl relative md:ml-auto md:text-right md:mr-16 lg:mr-24"
                 }
               >
                 <Reveal>
