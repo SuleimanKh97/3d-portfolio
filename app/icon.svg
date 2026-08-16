@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Dark Background Glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0f2b48" />
+      <stop offset="60%" stop-color="#071527" />
+      <stop offset="100%" stop-color="#030914" />
+    </radialGradient>
+
+    <!-- Monogram Cyan-to-Purple Gradient -->
+    <linearGradient id="skGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Border Glow Filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Container Box (Squircle) -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#bgGlow)" stroke="#38bdf8" stroke-width="8" stroke-opacity="0.8" />
+
+  <!-- Corner IoT Circuit Traces -->
+  <g opacity="0.4">
+    <!-- Top Left -->
+    <path d="M 60,110 L 110,110 L 140,80" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+    <circle cx="60" cy="110" r="6" fill="#38bdf8" />
+    
+    <!-- Top Right -->
+    <path d="M 452,110 L 402,110 L 372,80" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+    <circle cx="452" cy="110" r="6" fill="#38bdf8" />
+
+    <!-- Bottom Left -->
+    <path d="M 60,402 L 110,402 L 140,432" fill="none" stroke="#c084fc" stroke-width="4" stroke-linecap="round" />
+    <circle cx="60" cy="402" r="6" fill="#c084fc" />
+
+    <!-- Bottom Right -->
+    <path d="M 452,402 L 402,402 L 372,432" fill="none" stroke="#c084fc" stroke-width="4" stroke-linecap="round" />
+    <circle cx="452" cy="402" r="6" fill="#c084fc" />
+  </g>
+
+  <!-- Monogram SK -->
+  <g filter="url(#glow)">
+    <!-- Letter S -->
+    <path d="M 224,170 H 164 Q 144,170 144,196 V 214 Q 144,234 164,240 L 204,248 Q 224,254 224,274 V 292 Q 224,312 204,312 H 144" 
+          fill="none" stroke="url(#skGradient)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Letter K Stem -->
+    <path d="M 288,170 V 312" 
+          fill="none" stroke="url(#skGradient)" stroke-width="36" stroke-linecap="round" />
+    
+    <!-- Letter K Upper Arm -->
+    <path d="M 292,246 L 368,170" 
+          fill="none" stroke="url(#skGradient)" stroke-width="36" stroke-linecap="round" />
+
+    <!-- Letter K Lower Leg -->
+    <path d="M 296,236 L 368,312" 
+          fill="none" stroke="url(#skGradient)" stroke-width="36" stroke-linecap="round" />
+
+    <!-- Endpoint IoT Nodes -->
+    <circle cx="224" cy="170" r="10" fill="#38bdf8" />
+    <circle cx="144" cy="312" r="10" fill="#c084fc" />
+    <circle cx="368" cy="170" r="10" fill="#38bdf8" />
+    <circle cx="368" cy="312" r="10" fill="#c084fc" />
+    <circle cx="288" cy="241" r="8" fill="#818cf8" />
+  </g>
+</svg>

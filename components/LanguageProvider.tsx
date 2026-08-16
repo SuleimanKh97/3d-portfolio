@@ -27,7 +27,7 @@ const STORAGE_KEY = "portfolio-lang";
 
 // Inlined in <head> before hydration so the document lang attribute matches
 // the user's stored preference (avoids FOUC and wrong screen-reader lang).
-export const LANG_BOOT_SCRIPT = `(function(){try{var l=localStorage.getItem(${JSON.stringify(STORAGE_KEY)});var ok=${JSON.stringify(LANGUAGES)};if(l&&ok.indexOf(l)>-1){document.documentElement.lang=l;}}catch(e){}})();`;
+export const LANG_BOOT_SCRIPT = `(function(){try{var l=localStorage.getItem(${JSON.stringify(STORAGE_KEY)});var ok=${JSON.stringify(LANGUAGES)};if(l&&ok.indexOf(l)>-1){document.documentElement.lang=l;document.documentElement.dir=(l==='ar'?'rtl':'ltr');}}catch(e){}})();`;
 
 export default function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>(DEFAULT_LANG);
@@ -35,12 +35,15 @@ export default function LanguageProvider({ children }: { children: ReactNode }) 
   useEffect(() => {
     // Sync React state with whatever the boot script already applied to the
     // <html> element. No-op if the boot script didn't find a stored pref.
-    const domLang = document.documentElement.lang;
+    const domLang = document.documentElement.lang as Lang;
     if (
-      (domLang === "es" || domLang === "en") &&
+      (domLang === "ar" || domLang === "en") &&
       domLang !== lang
     ) {
       setLangState(domLang);
+      document.documentElement.dir = domLang === "ar" ? "rtl" : "ltr";
+    } else {
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -48,6 +51,7 @@ export default function LanguageProvider({ children }: { children: ReactNode }) 
   const setLang = useCallback((next: Lang) => {
     setLangState(next);
     document.documentElement.lang = next;
+    document.documentElement.dir = next === "ar" ? "rtl" : "ltr";
     try {
       localStorage.setItem(STORAGE_KEY, next);
     } catch {

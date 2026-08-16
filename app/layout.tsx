@@ -23,22 +23,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Txema Albero — Software Engineer & Tech Lead",
+  title: "Suleiman Khashashneh — Full Stack Web Developer & IoT Engineer",
   description:
-    "Portfolio inmersivo de Txema Albero — Software Engineer / Tech Lead. Experiencias web 3D con Next.js y React Three Fiber.",
-  authors: [{ name: "Txema Albero" }],
+    "Portfolio of Suleiman Khashashneh — Full Stack Web Developer & IoT Engineer. Interactive 3D portfolio featuring Angular, ASP.NET Core, React, Python, C#, and IoT.",
+  authors: [{ name: "Suleiman Khashashneh" }],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
-    title: "Txema Albero — Software Engineer & Tech Lead",
+    title: "Suleiman Khashashneh — Full Stack Web Developer & IoT Engineer",
     description:
-      "Portfolio inmersivo con escena 3D interactiva. Next.js, React Three Fiber, GLSL.",
+      "Interactive 3D portfolio of Suleiman Khashashneh featuring web engineering, IoT pipelines, and full-stack projects.",
     type: "website",
-    locale: "es_ES",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Txema Albero — Software Engineer & Tech Lead",
+    title: "Suleiman Khashashneh — Full Stack Web Developer & IoT Engineer",
     description:
-      "Portfolio inmersivo con escena 3D interactiva. Next.js, React Three Fiber, GLSL.",
+      "Interactive 3D portfolio of Suleiman Khashashneh featuring web engineering, IoT pipelines, and full-stack projects.",
   },
 };
 

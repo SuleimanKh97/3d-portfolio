@@ -16,12 +16,12 @@ import { useIsMobile } from "@/lib/useIsMobile";
 import { SKILLS_FLAT } from "@/lib/skills";
 import type { Lang } from "@/lib/i18n";
 
-const EMAIL = "josemariaalberobelamendia@gmail.com";
+const EMAIL = "suleiman97kh@gmail.com";
 
-// Localised content lives in `{ es, en }` objects inside these arrays so the
+// Localised content lives in `{ ar, en }` objects inside these arrays so the
 // page can be a straightforward array.map() at render time. Tech names stay
 // as plain strings (they're brand names, not localised).
-type Localised = { es: string; en: string };
+type Localised = { ar: string; en: string };
 
 type Project = ProjectDetail & {
   align: "left" | "right";
@@ -32,145 +32,109 @@ const projects: Project[] = [
   {
     num: "01",
     name: {
-      es: "Contestador IA de Reseñas Google",
-      en: "AI Responder for Google Reviews",
+      ar: "سوق حلال — منصة تجارة المواشي الإلكترونية",
+      en: "Halal Souq — Livestock E-Commerce Platform",
     },
     stack: [
-      "Next.js",
-      "FastAPI",
-      "Python",
-      "PostgreSQL",
-      "Supabase",
-      "Claude API",
-      "Stripe",
-      "Celery",
+      "Angular",
+      "ASP.NET Core Web API",
+      "SQL Server",
+      "C#",
+      "TypeScript",
+      "JWT",
+      "RESTful API",
     ],
     desc: {
-      es: "SaaS que genera respuestas personalizadas a reseñas de Google Business Profile con IA, manteniendo el tono de la marca.",
-      en: "SaaS that generates personalised replies to Google Business Profile reviews with AI while keeping the brand tone.",
+      ar: "منصة تجارة مواشي متكاملة مع لوحات تحكم مخصصة حسب الأدوار (مشتري، بائع، أدمن) محمية بنظام JWT وسلسلة مزادات وخرائط تفاعلية.",
+      en: "Full-stack livestock marketplace with JWT-secured, role-based dashboards (Buyer, Seller, Admin), live auctions, and interactive maps.",
     },
     details: {
-      es: "Plataforma orientada a negocios locales en España para gestionar sus reseñas de Google Business Profile. El sistema hace polling cada 15 minutos, llama a Claude para generar respuestas alineadas con el tono de marca y las publica automáticamente (o las manda a revisión). Incluye Stripe con suscripciones y Customer Portal, autenticación con Google OAuth + PKCE, alertas por email/SMS para reseñas negativas y un dashboard con métricas.",
-      en: "A platform for local businesses in Spain to manage their Google Business Profile reviews. The system polls every 15 minutes, uses Claude to draft replies in the brand's tone and publishes them automatically (or sends them to review). Stripe handles subscriptions and Customer Portal, auth is Google OAuth with PKCE, and negative reviews fire email/SMS alerts. Dashboard with metrics included.",
+      ar: "منصة متكاملة لتجارة المواشي تم تصميمها وتطويرها بشكل فردي بالكامل. تتضمن مزادات حية، إدارة الطلبات، المراسلة الداخلية، عربة التسوق، وخرائط تفاعلية. بنيت باستخدام المعمارية النظيفة Clean Architecture (DTOs, Route Guards, Dependency Injection)، مع واجهة برمجة تطبيقات RESTful في ASP.NET Core، وقاعدة بيانات SQL Server، وواجهة مستخدم تفاعلية باستخدام Angular.",
+      en: "A full-stack livestock marketplace designed and built solo end-to-end. Features live auctions, order management, internal messaging, shopping cart, and interactive map views. Built with clean architecture (DTOs, route guards, dependency injection), robust Web API design in ASP.NET Core Web API, SQL Server database layer, and responsive Angular frontend across all role dashboards.",
     },
-    url: "https://revio.txemaalbero.com/",
-    media: [
-      "/projects/revio/landing.png",
-      "/projects/revio/dashboard.png",
-      "/projects/revio/alertas.png",
-      "/projects/revio/analiticas.png",
-      "/projects/revio/negocios.png",
-      "/projects/revio/analiticas-ia.png",
-    ],
-    highlights: ["nextdotjs", "tailwindcss", "python", "postgresql"],
+    github: "https://github.com/SuleimanKh97",
+    highlights: ["angular", "dotnet", "postgresql", "typescript"],
     align: "left",
     section: "project1",
   },
   {
     num: "02",
     name: {
-      es: "Control de Temperaturas APPCC",
-      en: "HACCP Temperature Control",
+      ar: "المعتصم — منصة تعليمية عربية",
+      en: "Al-Mutassim — Arabic Educational Platform",
     },
     stack: [
-      "Next.js 16",
-      "FastAPI",
-      "Python",
-      "PostgreSQL",
-      "Supabase",
-      "Claude API",
-      "Stripe",
-      "Celery",
+      "React",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "RTL Layout",
+      "Arabic Typography",
     ],
     desc: {
-      es: "App para restaurantes que digitaliza el registro de temperaturas APPCC y genera planes e informes automáticos para inspecciones sanitarias.",
-      en: "App for restaurants that digitises HACCP temperature logs and auto-generates plans and reports for food safety inspections.",
+      ar: "منصة تعليمية تعمل مباشرة في الإنتاج لتقديم الدورات التدريبية والدروس المرئية والاختبارات والمقالات مع دعم كامل للاتجاه RTL.",
+      en: "Educational platform live in production offering online courses, video lessons, quizzes, and articles built with native RTL.",
     },
     details: {
-      es: "Digitaliza el control APPCC completo de un restaurante: registros de temperatura, trazabilidad, alérgenos y generación asistida por IA de los planes HACCP. Integración con Open Food Facts para importar alérgenos, MFA en la autenticación, multi-idioma con next-intl y pagos por suscripción con Stripe. Backend 100% async con FastAPI + SQLAlchemy y tareas en Celery.",
-      en: "Full HACCP digitisation for a restaurant: temperature logs, traceability, allergens, and AI-assisted generation of HACCP plans. Integrates with Open Food Facts for allergens, MFA-protected auth, i18n with next-intl, subscription billing with Stripe. Fully async backend with FastAPI + SQLAlchemy and Celery workers.",
+      ar: "منصة تعليمية تم إعادتها بالكامل باستخدام React ونشرها على النطاق المباشر (al-mutassim.com). تم تصميم الواجهة بدعم اتجاه محاذي لليمين على مستوى جذر المستند (`dir=\"rtl\"`)، وتضمين خطوط عربية تناسب القراءة (Amiri, Tajawal, Aref Ruqaa) وتوحيد المصطلحات التعليمية.",
+      en: "An educational platform for courses, video lessons, quizzes, and articles. Recreated from scratch in React and currently live in production (al-mutassim.com). Designed with native RTL layout (`dir=\"rtl\"`), custom Arabic typography (Amiri, Tajawal, Aref Ruqaa) for legibility, and unified terminology.",
     },
-    url: "https://aptia.txemaalbero.com/",
-    media: [
-      "/projects/aptia/landing.png",
-      "/projects/aptia/panel.png",
-      "/projects/aptia/registros.png",
-      "/projects/aptia/carta-alergenos.png",
-      "/projects/aptia/inspeccion.png",
-      "/projects/aptia/cuestionario.png",
-    ],
-    highlights: ["nextdotjs", "tailwindcss", "python", "postgresql", "typescript"],
-    badge: { es: "En desarrollo", en: "In progress" },
+    url: "https://al-mutassim.com",
+    highlights: ["react", "javascript", "html5", "css"],
+    badge: { ar: "مباشر في الإنتاج", en: "Live in Production" },
     align: "right",
     section: "project2",
   },
   {
     num: "03",
     name: {
-      es: "Gestor de Finanzas Personales",
-      en: "Personal Finance Tracker",
+      ar: "نظام إدارة الموارد البشرية (HR)",
+      en: "HR Management System",
     },
     stack: [
-      "Django",
-      "Python",
-      "SQLite",
-      "HTML5",
-      "CSS3",
+      "C#",
+      "ASP.NET Core MVC",
+      "SQL Server",
+      "Bootstrap",
       "JavaScript",
-      "Chart.js",
-      "pandas",
+      "Agile",
     ],
     desc: {
-      es: "Dashboard para seguimiento de ingresos, gastos y objetivos de ahorro con visualizaciones gráficas, importación desde Excel e informes mensuales.",
-      en: "Dashboard to track income, expenses and savings goals with visual charts, Excel import and monthly reports.",
+      ar: "نظام متكامل للموظفين والمدراء وقسم الموارد البشرية لمتابعة المهام، الحضور والغياب، والإجازات، وتوليد تقارير PDF.",
+      en: "Enterprise HR platform for employees, managers, and HR teams featuring task tracking, attendance logging, and PDF reports.",
     },
     details: {
-      es: "Aplicación Django clásica (MVT) para finanzas personales: categorización de gastos, objetivos de ahorro, importación masiva desde Excel (xlsx/xls) y gráficos con Chart.js. Temas claro/oscuro hechos con CSS puro y sin dependencias frontend. Un proyecto que prioriza simplicidad y robustez: sin frameworks en el cliente, autenticación nativa de Django, base de datos SQLite.",
-      en: "Classic Django (MVT) app for personal finance: expense categorisation, savings goals, bulk import from Excel (xlsx/xls) and Chart.js-powered graphs. Light/dark themes in pure CSS with zero frontend dependencies. A project that favours simplicity and robustness: no client framework, Django's built-in auth, SQLite storage.",
+      ar: "تم تطوير المشروع ضمن فريق مكون من 6 أفراد باتباع منهجية Agile. يقدم لوحات تحكم مخصصة للموظفين والمدراء وقسم الموارد البشرية: متابعة المهام، تسجيل الحضور، طلبات الإجازات، استخراج تقارير PDF، البحث الصوتي، تشفير كلمة المرور والإشعارات عبر البريد.",
+      en: "Built by a 6-person team following Agile principles. Includes custom dashboards for employees, managers, and HR: task assignments, attendance logging, leave request approval, automated PDF reports, voice search, password encryption, and email notifications.",
     },
-    github: "https://github.com/Txemalon/Gestor-de-gastos-personales",
-    media: [
-      "/projects/gestor-gastos/dashboard.png",
-      "/projects/gestor-gastos/wallets.png",
-      "/projects/gestor-gastos/transacciones.png",
-      "/projects/gestor-gastos/categorias.png",
-      "/projects/gestor-gastos/reportes.png",
-      "/projects/gestor-gastos/inversiones.png",
-    ],
-    highlights: ["python", "javascript", "html5", "css"],
+    github: "https://github.com/SuleimanKh97",
+    highlights: ["dotnet", "bootstrap", "javascript"],
     align: "left",
     section: "project3",
   },
   {
     num: "04",
     name: {
-      es: "Tienda online de dianas",
-      en: "Dartboards e-commerce",
+      ar: "منصة المكتبة واشتراكات الكتب (UI/UX)",
+      en: "Bookstore & Library Subscription Platform (UI/UX)",
     },
     stack: [
-      "Next.js 15",
-      "React",
-      "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "NextAuth",
-      "Stripe",
-      "Framer Motion",
+      "Figma",
+      "UI/UX Design",
+      "Wireframing",
+      "Prototyping",
+      "User Testing",
     ],
     desc: {
-      es: "E-commerce moderno para venta de dianas con pagos integrados, autenticación social, panel de administración y animaciones fluidas.",
-      en: "Modern e-commerce for dartboards with integrated payments, social auth, an admin panel and smooth animations.",
+      ar: "تصميم واجهات وتجربة المستخدم ونماذج تفاعلية كاملة على Figma لمتجر كتب واشتراكات مكتبية.",
+      en: "Comprehensive UI/UX design and interactive Figma prototypes for a bookstore and library subscription platform.",
     },
     details: {
-      es: "Tienda online completa con catálogo, carrito y checkout con Stripe. NextAuth con Google OAuth y credenciales, rate limiting con Upstash Redis, validación con Zod y un panel de administración separado (AdminJS sobre Express, puerto 3001). Transiciones y microinteracciones con Framer Motion para darle un acabado más premium que una tienda al uso.",
-      en: "A full e-commerce with catalogue, cart and Stripe checkout. NextAuth with Google OAuth and credentials, Upstash Redis for rate limiting, Zod validation, and a separate admin panel (AdminJS on Express, port 3001). Framer Motion powers transitions and micro-interactions for a more premium feel than a typical shop.",
+      ar: "مشروع تصميم UI/UX شامل في Figma لمتجر كتب ونظام اشتراكات مكتبية. شمل إنشاء نماذج أولية تفاعلية لتصفح الكتالوج، عملية الاشتراك، ودفع المشتريات. تم التطوير عبر جولات متعددة من الملاحظات لتحسين التباين، حجم الخطوط، وتسلسل أزرار الإجراءات.",
+      en: "End-to-end UI/UX design created in Figma with interactive wireframes and mockups for catalog browsing, subscription plans, and checkout. Iterated through structured user feedback cycles to enhance contrast, button hierarchy, and conversion layout.",
     },
-    media: [
-      "/projects/dianas/packs.png",
-      "/projects/dianas/catalogo.png",
-    ],
-    highlights: ["nextdotjs", "react", "typescript", "tailwindcss", "postgresql"],
-    badge: { es: "En construcción", en: "Under construction" },
+    highlights: ["figma"],
+    badge: { ar: "نموذج Figma تفاعلي", en: "Figma Prototype" },
     align: "right",
     section: "project4",
   },
@@ -186,38 +150,193 @@ const experiences: Array<{
   stack: string[];
 }> = [
   {
-    role: { es: "Tech Lead", en: "Tech Lead" },
-    company: "Activalink",
-    period: { es: "2023 — Presente", en: "2023 — Present" },
-    location: { es: "Alcoy, España", en: "Alcoy, Spain" },
+    role: {
+      ar: "مطور ويب ومهندس IoT",
+      en: "Web Developer & IoT Engineer",
+    },
+    company: "Smart Cloud",
+    period: { ar: "أيار 2026 — الحالي", en: "May 2026 — Present" },
+    location: { ar: "الأردن", en: "Jordan" },
     summary: {
-      es: "Activalink implementa y adapta ERPs para pymes y grandes empresas. Desarrollo módulos y personalizaciones custom sobre Odoo, integraciones a medida y proyectos de implantación llave en mano. Lidero un equipo de 3 desarrolladores: nuestro trabajo se mide en tiempo ahorrado y errores evitados.",
-      en: "Activalink implements and customises ERPs for SMBs and large companies. I build custom modules and personalisations on top of Odoo, bespoke integrations, and end-to-end implementation projects. I lead a team of 3 developers: our work is measured in time saved and errors avoided.",
+      ar: "بناء وتطوير مسارات معالجة البيانات اللحظية المعتمدة على Event-Driven Architectures لتحليل قراءات الأجهزة عالية التردد. تصميم منطق التحويلات والحقول المحسوبة، وإنشاء عناصر تحكم وقياس سريعة الاستجابة مع دمج نماذج الذكاء الاصطناعي بلغة Python.",
+      en: "Engineered scalable real-time data ingestion and processing pipelines using event-driven architectures for high-frequency telemetry. Designed data transformation logic, built low-latency visualization widgets, and integrated Python AI/ML models into backend pipelines.",
     },
     bullets: [
       {
-        es: "OCR de facturas en Odoo — de 4 h/día a 30 min (−87 %).",
-        en: "Invoice OCR in Odoo — from 4 h/day down to 30 min (−87 %).",
+        ar: "مسارات معالجة واستقبال بيانات أجهزة IoT عالية التردد في الوقت الفعلي.",
+        en: "Real-time telemetry data ingestion and event-driven processing pipelines.",
       },
       {
-        es: "Logística con mapa interactivo — −60 % errores de seguimiento.",
-        en: "Interactive logistics map — −60 % tracking errors.",
+        ar: "منطق تحويل البيانات الفوري وإنشاء الحقول المحسوبة المخصصة.",
+        en: "On-the-fly data transformation logic and custom calculated fields.",
       },
       {
-        es: "Conciliación automática — cierre contable de 3 días a medio día.",
-        en: "Automated reconciliation — monthly close from 3 days to half a day.",
+        ar: "عناصر عرض ولوحات تحليلات عالية الأداء وسريعة الاستجابة.",
+        en: "Low-latency data-visualization widgets and analytics dashboards.",
       },
       {
-        es: "Dashboards financieros — detección temprana de facturas sin emitir.",
-        en: "Financial dashboards — early detection of uninvoiced orders.",
+        ar: "اختبارات برمجية شاملة بلغة Python ودمج نماذج التعلم الآلي للتنبؤ.",
+        en: "Python unit-testing suites and integrated AI/ML predictive analytics models.",
       },
     ],
-    stack: ["Odoo", "Python", "PostgreSQL", "Next.js", "TypeScript", "Docker"],
+    stack: [
+      "Python",
+      "IoT Telemetry",
+      "Event-Driven Pipelines",
+      "AI/ML",
+      "Dashboards",
+      "PostgreSQL",
+    ],
+  },
+  {
+    role: {
+      ar: "متدرب تطوير ويب Full Stack",
+      en: "Full Stack Web Development Intern",
+    },
+    company: "Hikayatajloun (Orange Coding Academy)",
+    period: { ar: "أيار 2025 — حزيران 2025", en: "May 2025 — June 2025" },
+    location: { ar: "الأردن", en: "Jordan" },
+    summary: {
+      ar: "فترة تدريب في تطوير حلول ويب مجتمعية باستخدام HTML, CSS, JavaScript, و ASP.NET Core. التعاون مع فرق متعددة التخصصات وتطبيق منهجيات Agile ومراجعات الكود.",
+      en: "Built community-centered web solutions using HTML, CSS, JavaScript, and ASP.NET Core. Collaborated with cross-functional teams using Agile methodologies, Git, Trello, pair programming, and code reviews.",
+    },
+    bullets: [
+      {
+        ar: "تطوير ميزات كاملة للموقع باستخدام ASP.NET Core و JavaScript.",
+        en: "Developed full-stack features using ASP.NET Core MVC and JavaScript.",
+      },
+      {
+        ar: "تطبيق منهجيات Agile، البرمجة الثنائية اليومية ومراجعة الكود.",
+        en: "Applied Agile methodologies, daily pair programming, and code reviews.",
+      },
+    ],
+    stack: ["ASP.NET Core", "C#", "JavaScript", "HTML/CSS", "Git", "Agile"],
+  },
+  {
+    role: {
+      ar: "متدرب تطوير الويب الشامل Full Stack",
+      en: "Full Stack Web Development Trainee",
+    },
+    company: "Orange Coding Academy (Simplon.co & PSUT)",
+    period: { ar: "كانون الأول 2024 — أيار 2025", en: "Dec 2024 — May 2025" },
+    location: { ar: "إربد، الأردن", en: "Irbid, Jordan" },
+    summary: {
+      ar: "معسكر تدريبي مكثف في تطوير الويب بالتعاون مع Simplon.co وجامعة الأميرة سمية للتكنولوجيا. تطوير 7 مشاريع ويب كاملة والقيام بدور Scrum Master و Product Owner.",
+      en: "Intensive 6-month full-stack development bootcamp in collaboration with Simplon.co and PSUT. Developed 7 full-stack web applications and served as Scrum Master and Product Owner across projects.",
+    },
+    bullets: [
+      {
+        ar: "بناء واجهات تجاوبية وخدمات خلفية آمنة باستخدام ASP.NET Core و SQL Server.",
+        en: "Responsive frontends and secure backend APIs with ASP.NET Core & SQL Server.",
+      },
+      {
+        ar: "قيادة الفرق بدور Scrum Master و Product Owner وتنظيم فترات الـ Sprints.",
+        en: "Served as Scrum Master and Product Owner facilitating requirement gathering and sprint ceremonies.",
+      },
+    ],
+    stack: [
+      "Angular",
+      "ASP.NET Core",
+      "SQL Server",
+      "C#",
+      "Bootstrap",
+      "Scrum Master",
+    ],
+  },
+  {
+    role: {
+      ar: "مستشار كفاءة الطاقة",
+      en: "Energy Efficiency Consultant",
+    },
+    company: "UNDP",
+    period: { ar: "أيلول 2023 — شباط 2024", en: "Sep 2023 — Feb 2024" },
+    location: { ar: "الأردن", en: "Jordan" },
+    summary: {
+      ar: "تقديم الاستشارات ودمج تقنيات كفاءة الطاقة في مشاريع الهندسة الكهربائية وإجراء التقييمات الفنية الميدانية.",
+      en: "Advised on and integrated energy-efficiency technologies across electrical engineering projects and conducted technical compliance assessments.",
+    },
+    bullets: [
+      {
+        ar: "تقييمات ميدانية لضمان المطابقة مع الكودات الوطنية للكهرباء والطاقة.",
+        en: "On-site assessments to ensure compliance with national engineering codes.",
+      },
+    ],
+    stack: [
+      "Energy Efficiency",
+      "Electrical Engineering",
+      "Technical Advisory",
+    ],
+  },
+  {
+    role: {
+      ar: "مهندس كهرباء",
+      en: "Electrical Engineer",
+    },
+    company: "Ministry of Local Administration",
+    period: { ar: "نيسان 2022 — آذار 2024", en: "Apr 2022 — Mar 2024" },
+    location: { ar: "الأردن", en: "Jordan" },
+    summary: {
+      ar: "الإشراف على التزام المجالس المحلية بالأنظمة وتنسيق عمل الفرق لرفع كفاءة العمليات الإدارية والتشغيلية.",
+      en: "Supervised regulatory compliance for local councils and coordinated cross-department teams to improve administrative and operational efficiency.",
+    },
+    bullets: [
+      {
+        ar: "الإشراف التنظيمي وتنسيق الفرق المتعددة لرفع الكفاءة التشغيلية.",
+        en: "Supervised regulatory compliance and coordinated cross-department teams for operational efficiency.",
+      },
+    ],
+    stack: [
+      "Electrical Engineering",
+      "Regulatory Compliance",
+      "Project Management",
+    ],
   },
 ];
 
-function pick<T>(loc: { es: T; en: T }, lang: Lang): T {
-  return loc[lang];
+const certifications: Array<{
+  title: Localised;
+  issuer: Localised;
+  year?: string;
+  badge?: Localised;
+}> = [
+  {
+    title: {
+      ar: "برنامج الجاهزية والمهارات في الأمن السيبراني",
+      en: "Cybersecurity Skills Readiness Program",
+    },
+    issuer: {
+      ar: "شركة الدائرة الخضراء للحلول البرمجية بالتعاون مع وزارة الشباب وداتاسبيس",
+      en: "Green Circle for Software Solutions in partnership with Ministry of Youth & Dataspace",
+    },
+    year: "2026",
+    badge: { ar: "الأمن السيبراني", en: "Cybersecurity" },
+  },
+  {
+    title: {
+      ar: "تدريب بناء القدرات لحصر غازات الدفيئة (GHGs Inventory)",
+      en: "Capacity-Building Training for Greenhouse Gases (GHGs) Inventory",
+    },
+    issuer: {
+      ar: "برنامج التدريب والتطوير البيئي والهندسي",
+      en: "Greenhouse Gases Technical Capacity-Building Initiative",
+    },
+    badge: { ar: "استدامة وبيئة", en: "Sustainability" },
+  },
+  {
+    title: {
+      ar: "التخطيط الحضري وحوكمة استخدام الأراضي ونظام تقييم المباني الخضراء",
+      en: "Urban Planning, Land Use Governance, and Green Building Rating System Training",
+    },
+    issuer: {
+      ar: "برنامج تدريب الحوكمة والمباني الخضراء",
+      en: "Urban Governance & Green Building Rating System Certification",
+    },
+    badge: { ar: "مباني خضراء", en: "Green Building" },
+  },
+];
+
+function pick<T>(loc: { ar: T; en: T }, lang: Lang): T {
+  return loc[lang] ?? loc.ar;
 }
 
 // Hero name split per word so each can rise independently. Whitespace
@@ -262,7 +381,7 @@ export default function Home() {
               data-cursor="hover"
               className="text-sm font-semibold tracking-tight text-ice-100 whitespace-nowrap"
             >
-              Txema Albero
+              Suleiman Khashashneh
             </span>
             {/* Wrapper (not the pill itself) carries the hide: .status-pill
                 hard-sets display:inline-flex, which beats Tailwind's .hidden
@@ -275,7 +394,7 @@ export default function Home() {
             <SeasonPicker />
             <span className="hidden md:inline-flex">
             <a
-              href="https://github.com/Txemalon/3d-portfolio"
+              href="https://github.com/SuleimanKh97/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="hover"
@@ -314,9 +433,9 @@ export default function Home() {
                 {t("hero.greeting")}
               </p>
               <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[8.5rem] font-bold tracking-[-0.03em] text-ice-50 leading-[0.92] whitespace-nowrap">
-                <HeroWord text="Txema" delay={120} />
+                <HeroWord text="Suleiman" delay={120} />
                 <br />
-                <HeroWord text="Albero" delay={260} className="text-ice-400" />
+                <HeroWord text="Khashashneh" delay={260} className="text-ice-400 text-5xl sm:text-7xl md:text-8xl lg:text-[7rem]" />
               </h1>
               <p
                 className="mt-8 text-base sm:text-lg md:text-xl text-ice-200 max-w-xl leading-relaxed fade-in-up"
@@ -333,9 +452,7 @@ export default function Home() {
                 style={{ ["--d" as string]: "700ms" }}
               >
                 <a
-                  href={lang === "en" ? "/cv_en.pdf" : "/cv.pdf"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`mailto:${EMAIL}`}
                   data-cursor="hover"
                   data-magnetic
                   className="frost-btn frost-btn--primary"
@@ -366,7 +483,7 @@ export default function Home() {
                     so desktop keeps everything on a single line. */}
                 <div className="basis-full h-0 md:hidden" aria-hidden />
                 <a
-                  href="https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246"
+                  href="https://www.linkedin.com/in/suleimankhashashneh/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
@@ -379,7 +496,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://github.com/Txemalon"
+                  href="https://github.com/SuleimanKh97/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
@@ -544,6 +661,37 @@ export default function Home() {
                   </div>
                 </Reveal>
               ))}
+
+              {/* Certifications Block */}
+              <Reveal delay={experiences.length * 100}>
+                <div className="pt-10 mt-10 border-t border-ink-3/80">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-ice-50 tracking-tight mb-6 text-center">
+                    {t("experience.certsTitle")}
+                  </h3>
+                  <div className="grid grid-cols-1 gap-4">
+                    {certifications.map((cert, idx) => (
+                      <div
+                        key={idx}
+                        className="rounded-xl bg-ink-1/70 backdrop-blur-sm border border-ink-3 p-5 pointer-events-auto transition-all duration-300 hover:border-ice-500/40 shadow-sm"
+                      >
+                        <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                          <h4 className="text-base sm:text-lg font-semibold text-ice-50 leading-snug">
+                            {pick(cert.title, lang)}
+                          </h4>
+                          {cert.badge && (
+                            <span className="text-[10px] font-mono uppercase tracking-wider text-ice-300 border border-ice-700/80 rounded-full px-2.5 py-0.5 bg-ink-2/80">
+                              {pick(cert.badge, lang)}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-xs sm:text-sm text-ice-300/90 leading-relaxed">
+                          {pick(cert.issuer, lang)}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
             </div>
           </section>
 
@@ -691,7 +839,7 @@ export default function Home() {
                     {t("contact.openMail")}
                   </a>
                   <a
-                    href="https://github.com/Txemalon"
+                    href="https://github.com/SuleimanKh97/"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"
@@ -700,7 +848,7 @@ export default function Home() {
                     {t("contact.github")}
                   </a>
                   <a
-                    href="https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246"
+                    href="https://www.linkedin.com/in/suleimankhashashneh/"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"

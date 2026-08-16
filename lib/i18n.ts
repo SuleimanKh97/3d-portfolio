@@ -3,166 +3,167 @@
 // which resolves the path for the active language. Keeping it flat and
 // co-located (rather than adding a dependency like next-intl) keeps the
 // project tiny and makes the strings easy to audit.
-export type Lang = "es" | "en";
+export type Lang = "ar" | "en";
 
-export const LANGUAGES: Lang[] = ["es", "en"];
-export const DEFAULT_LANG: Lang = "es";
+export const LANGUAGES: Lang[] = ["ar", "en"];
+export const DEFAULT_LANG: Lang = "en";
 
 type Leaf = Record<Lang, string>;
 type Node = Leaf | { [key: string]: Node };
 
 function isLeaf(node: Node): node is Leaf {
-  return typeof (node as Leaf).es === "string";
+  return typeof (node as Leaf).ar === "string";
 }
 
 export const DICT = {
   picker: {
-    season: { es: "Estación", en: "Season" },
-    language: { es: "Idioma", en: "Language" },
+    season: { ar: "الموسم", en: "Season" },
+    language: { ar: "اللغة", en: "Language" },
   },
   seasons: {
-    spring: { es: "Primavera", en: "Spring" },
-    summer: { es: "Verano", en: "Summer" },
-    autumn: { es: "Otoño", en: "Autumn" },
-    winter: { es: "Invierno", en: "Winter" },
+    spring: { ar: "الربيع", en: "Spring" },
+    summer: { ar: "الصيف", en: "Summer" },
+    autumn: { ar: "الخريف", en: "Autumn" },
+    winter: { ar: "الشتاء", en: "Winter" },
   },
   nav: {
-    aria: { es: "Secciones", en: "Sections" },
-    home: { es: "Inicio", en: "Home" },
-    stack: { es: "Stack", en: "Stack" },
-    experience: { es: "Experiencia", en: "Experience" },
-    project: { es: "Proyecto", en: "Project" },
-    contact: { es: "Contacto", en: "Contact" },
+    aria: { ar: "الأقسام", en: "Sections" },
+    home: { ar: "الرئيسية", en: "Home" },
+    stack: { ar: "التقنيات", en: "Stack" },
+    experience: { ar: "الخبرات", en: "Experience" },
+    project: { ar: "المشاريع", en: "Project" },
+    contact: { ar: "التواصل", en: "Contact" },
   },
   header: {
     availability: {
-      es: "Open to opportunities",
+      ar: "متاح للفرص والعمل",
       en: "Open to opportunities",
     },
   },
   hero: {
-    greeting: { es: "Hola, soy", en: "Hi, I am" },
+    greeting: { ar: "أهلاً، أنا", en: "Hi, I am" },
     roleLine: {
-      es: "Software Engineer & Tech Lead.",
-      en: "Software Engineer & Tech Lead.",
+      ar: "مطور ويب Full Stack ومهندس IoT.",
+      en: "Full Stack Web Developer & IoT Engineer.",
     },
     tagline: {
-      es: "Especializado en ERPs y aplicaciones full-stack para empresas.",
-      en: "Specialised in ERPs and full-stack apps for businesses.",
+      ar: "متخصص في بناء المنصات السحابية، معالجة بيانات IoT، وتطوير الأنظمة المتكاملة.",
+      en: "Building scalable web platforms, IoT data pipelines, and responsive full-stack applications.",
     },
-    cv: { es: "Descargar CV", en: "Download CV" },
-    hire: { es: "Contactarme", en: "Contact me" },
-    scroll: { es: "Scroll para explorar", en: "Scroll to explore" },
+    cv: { ar: "تحميل السيرة الذاتية", en: "Download CV" },
+    hire: { ar: "تواصل معي", en: "Contact me" },
+    scroll: { ar: "تمرير للاستكشاف", en: "Scroll to explore" },
     keysHint: {
-      es: "· hover sobre las teclas",
+      ar: "· مرر على المفاتيح",
       en: "· hover over the keys",
     },
   },
   stack: {
-    title: { es: "Tech Stack", en: "Tech Stack" },
+    title: { ar: "التقنيات والمهارات", en: "Tech Stack" },
     hint: {
-      es: "(hint: pasa el ratón por una tecla)",
+      ar: "(توجيه: مرر مؤشر الماوس فوق أي مفتاح)",
       en: "(hint: hover over a key)",
     },
     hintMobile: {
-      es: "Las herramientas con las que construyo.",
+      ar: "الأدوات والتقنيات التي أستخدمها في التطوير.",
       en: "The tools I build with.",
     },
   },
   experience: {
-    title: { es: "Experience", en: "Experience" },
+    title: { ar: "الخبرات والشهادات", en: "Experience & Certifications" },
     subtitle: {
-      es: "Mi trayectoria profesional.",
-      en: "My professional journey.",
+      ar: "مسيرتي المهنية والشهادات التخصصية.",
+      en: "My professional journey & certifications.",
     },
+    certsTitle: { ar: "الشهادات والدورات التخصصية", en: "Certifications & Specialised Training" },
   },
   projects: {
-    kicker: { es: "proyecto", en: "project" },
-    viewMore: { es: "Ver más", en: "View more" },
-    openSite: { es: "Abrir sitio", en: "Visit site" },
-    viewCode: { es: "Ver código", en: "View code" },
-    close: { es: "Cerrar", en: "Close" },
-    stackLabel: { es: "Stack", en: "Stack" },
-    overview: { es: "Resumen", en: "Overview" },
+    kicker: { ar: "مشروع", en: "project" },
+    viewMore: { ar: "عرض التفاصيل", en: "View more" },
+    openSite: { ar: "زيارة الموقع", en: "Visit site" },
+    viewCode: { ar: "عرض الكود", en: "View code" },
+    close: { ar: "إغلاق", en: "Close" },
+    stackLabel: { ar: "التقنيات المستعملة", en: "Stack" },
+    overview: { ar: "ملخص المشروع", en: "Overview" },
   },
   contact: {
-    kicker: { es: "contacto", en: "contact" },
-    title: { es: "¿Hablamos?", en: "Let's talk?" },
+    kicker: { ar: "تواصل معي", en: "contact" },
+    title: { ar: "هل نبدأ المحادثة؟", en: "Let's talk?" },
     body: {
-      es: "Si lo que has visto te interesa, el teclado ya está listo para recibir el primer mensaje.",
+      ar: "إذا كانت خبراتي ومشاريعي تناسب تطلعاتك، فالمجال مفتوح لبدء التعاون.",
       en: "If what you've seen interests you, the keyboard is ready for the first message.",
     },
-    copyEmail: { es: "Copiar email", en: "Copy email" },
-    openMail: { es: "Abrir mail", en: "Open mailto" },
-    github: { es: "GitHub", en: "GitHub" },
-    linkedin: { es: "LinkedIn", en: "LinkedIn" },
-    emailToast: { es: "Email copiado", en: "Email copied" },
+    copyEmail: { ar: "نسخ البريد الإلكتروني", en: "Copy email" },
+    openMail: { ar: "إرسال رسالة", en: "Open mailto" },
+    github: { ar: "GitHub", en: "GitHub" },
+    linkedin: { ar: "LinkedIn", en: "LinkedIn" },
+    emailToast: { ar: "تم نسخ البريد الإلكتروني", en: "Email copied" },
     footer: {
-      es: "© 2026 Txema Albero. Todos los derechos reservados.",
-      en: "© 2026 Txema Albero. All rights reserved.",
+      ar: "© 2026 سليمان الخشاشنة. جميع الحقوق محفوظة.",
+      en: "© 2026 Suleiman Khashashneh. All rights reserved.",
     },
   },
   keyboard: {
     taglines: {
       javascript: {
-        es: "Donde empezó todo. Sigue aquí, sigue mandando.",
-        en: "Where it all started. Still here, still in charge.",
+        ar: "الأساس المتين لتطوير تطبيقات الويب التفاعلية.",
+        en: "Core foundation of interactive web development.",
       },
       typescript: {
-        es: "Mismo JS, con cinturón de seguridad.",
-        en: "Same JS, with a seatbelt.",
+        ar: "JavaScript مدعومة بالأنماط البرمجية لنظام آمن وقابل للتوسع.",
+        en: "Typed JavaScript for scalable and predictable codebases.",
       },
       html5: {
-        es: "Los huesos de cualquier página.",
-        en: "The bones of any page.",
+        ar: "الهيكل الدلالي لبناء interfaces مريحة وسهلة الوصول.",
+        en: "Semantic building blocks for accessible UI.",
       },
       css: {
-        es: "El detalle que separa lo bueno de lo bonito.",
-        en: "What separates good from beautiful.",
+        ar: "تصميم تجاوبي، أنيميشن سلس، ودعم كامل للغات RTL.",
+        en: "Responsive styling, smooth transitions, and native RTL support.",
       },
-      tailwindcss: {
-        es: "Utility-first. Diseño en el HTML.",
-        en: "Utility-first. Design inside the HTML.",
+      bootstrap: {
+        ar: "إطار عمل CSS سريع لبناء واجهات تجاوبية منسقة.",
+        en: "CSS framework for rapid, responsive UI development.",
       },
-      python: {
-        es: "Se lee como inglés, escala como cohete.",
-        en: "Reads like English, scales like a rocket.",
+      angular: {
+        ar: "إطار عمل قوي في البيئات الإنتاجية لتطوير الأنظمة الضخمة.",
+        en: "Production-proven framework for enterprise frontend applications.",
       },
       react: {
-        es: "Componentes, componentes, componentes.",
-        en: "Components, components, components.",
+        ar: "مكتبة واجهات قائمة على المكونات لبناء تطبيقات ديناميكية.",
+        en: "Component-based UI library for dynamic web platforms.",
       },
-      nextdotjs: {
-        es: "React adulto: routing, SSR, edge.",
-        en: "React all grown up: routing, SSR, edge.",
+      dotnet: {
+        ar: "C# و ASP.NET Core لبناء Web APIs ومعماريات MVC محكمة.",
+        en: "C# & ASP.NET Core Web APIs and clean MVC architectures.",
       },
-      vuedotjs: {
-        es: "El frontend más relajado.",
-        en: "The most relaxed frontend.",
+      python: {
+        ar: "معالجة بيانات IoT، نماذج الذكاء الاصطناعي، واختبارات البرمجيات.",
+        en: "IoT telemetry pipelines, AI/ML models, and unit testing suites.",
       },
-      nodedotjs: {
-        es: "JavaScript en el servidor.",
-        en: "JavaScript on the server.",
-      },
-      php: {
-        es: "Mueve más web de la que crees.",
-        en: "Runs more of the web than you think.",
-      },
-      odoo: {
-        es: "ERP que no hace llorar.",
-        en: "ERP that doesn't make you cry.",
+      firebase: {
+        ar: "مصادقة المستخدمين، قواعد بيانات لحظية، وخدمات سحابية.",
+        en: "Realtime database, authentication, and cloud infrastructure.",
       },
       postgresql: {
-        es: "La base de datos aburrida que siempre funciona.",
-        en: "The boring database that always works.",
+        ar: "قاعدة بيانات علاقاتية قوية وموثوقة للأنظمة العالية الأداء.",
+        en: "Powerful relational database for reliable backend storage.",
+      },
+      trello: {
+        ar: "إدارة المشاريع وتنظيم دورات التطوير وفق منهجية Agile/Scrum.",
+        en: "Project management and Agile sprint organization.",
       },
       docker: {
-        es: "Igual en mi máquina, igual en producción.",
-        en: "Same on my machine, same in production.",
+        ar: "حاويات برمجية لتضمين وتسهيل نشر التطبيقات في بيئات الإنتاج.",
+        en: "Containerized application deployment across environments.",
       },
       git: {
-        es: "Historia y máquina del tiempo del código.",
-        en: "History and a time machine for your code.",
+        ar: "إدارة النسخ والتتبع البرمجي ومشاركة الكود بين الفرق.",
+        en: "Version control and collaborative Git workflows.",
+      },
+      figma: {
+        ar: "تصميم واجهات وتجربة المستخدم (UI/UX) ونماذج تفاعلية.",
+        en: "UI/UX design, wireframing, and interactive user prototyping.",
       },
     },
   },
@@ -177,6 +178,6 @@ export function translate(path: string, lang: Lang): string {
     ref = (ref as { [key: string]: Node })[p];
     if (ref === undefined) return path;
   }
-  if (isLeaf(ref)) return ref[lang] ?? ref.es ?? path;
+  if (isLeaf(ref)) return ref[lang] ?? ref.ar ?? path;
   return path;
 }
