@@ -63,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="es"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
@@ -72,6 +72,34 @@ export default function RootLayout({
             season + language — avoids a flash of the default values. */}
         <script dangerouslySetInnerHTML={{ __html: SEASON_BOOT_SCRIPT }} />
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOT_SCRIPT }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Suleiman Khashashneh",
+              jobTitle: "Full Stack Web Developer & IoT Engineer",
+              url: "https://github.com/SuleimanKh97",
+              sameAs: [
+                "https://www.linkedin.com/in/suleimankhashashneh/",
+                "https://github.com/SuleimanKh97"
+              ],
+              knowsAbout: [
+                "Full Stack Web Development",
+                "IoT Data Telemetry",
+                "ASP.NET Core",
+                "Angular",
+                "React",
+                "Python",
+                "C#",
+                "TypeScript",
+                "PostgreSQL",
+                "SQL Server"
+              ]
+            }),
+          }}
+        />
       </head>
       <body
         className="min-h-full flex flex-col"

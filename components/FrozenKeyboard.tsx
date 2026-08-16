@@ -97,6 +97,16 @@ const SECTION_STATES: Record<string, KeyboardState> = {
     posZ: 0,
     scale: 0.85,
   },
+  // Project 5 — left-aligned, keyboard right.
+  project5: {
+    yaw: 0,
+    pitch: 0.7,
+    roll: 0.2,
+    posX: 1.5,
+    posY: 0.2,
+    posZ: 0,
+    scale: 0.85,
+  },
   experience: {
     yaw: Math.PI * 0.3,
     pitch: Math.PI * 0.08,
@@ -810,6 +820,21 @@ function Keyboard({ mobile }: { mobile: boolean }) {
   );
 }
 
+function SeasonalLighting() {
+  const { palette } = useSeason();
+  return (
+    <>
+      <ambientLight intensity={0.2} color={palette.lightColor} />
+      <directionalLight position={[-5, 8, 3]} intensity={2.2} color="#ffffff" />
+      <hemisphereLight
+        intensity={0.35}
+        color={palette.lightColor}
+        groundColor="#0a1428"
+      />
+    </>
+  );
+}
+
 export default function FrozenKeyboard({
   mobile = false,
 }: {
@@ -868,17 +893,8 @@ export default function FrozenKeyboard({
           scale={[8, 8, 1]}
         />
       </Environment>
-      {/* Naresh-style lighting: low ambient + strong single directional from
-          upper-left gives crisp top-bright / sides-shadowed contrast. The
-          hemisphere adds a subtle sky-ground gradient so the darkest faces
-          still read as "the lower faces" instead of pitch-black. */}
-      <ambientLight intensity={0.15} />
-      <directionalLight position={[-5, 8, 3]} intensity={2.2} />
-      <hemisphereLight
-        intensity={0.25}
-        color="#eaf2fb"
-        groundColor="#0a1428"
-      />
+
+      <SeasonalLighting />
 
       <Keyboard mobile={mobile} />
 

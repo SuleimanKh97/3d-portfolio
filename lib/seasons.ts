@@ -13,6 +13,8 @@ export type SeasonPalette = {
   accent: string;
   // Base plastic colour of the 3D keyboard body.
   keyboardBase: string;
+  // 3D scene ambient lighting tint color.
+  lightColor: string;
   // Colour of the falling particles in FrozenBackground.
   particle: string;
   // Soft halo colour drawn around larger particles.
@@ -22,33 +24,37 @@ export type SeasonPalette = {
 export const SEASONS: SeasonPalette[] = [
   {
     id: "spring",
-    label: "Primavera",
+    label: "Spring",
     accent: "#76c487",
     keyboardBase: "#7bc98c",
+    lightColor: "#a4f0b5",
     particle: "rgba(228, 255, 220, 0.72)",
     particleHalo: "rgba(184, 230, 168, 0.2)",
   },
   {
     id: "summer",
-    label: "Verano",
+    label: "Summer",
     accent: "#ff9c2f",
     keyboardBase: "#ffaa42",
+    lightColor: "#ffd285",
     particle: "rgba(255, 240, 180, 0.78)",
     particleHalo: "rgba(255, 180, 90, 0.22)",
   },
   {
     id: "autumn",
-    label: "Otoño",
+    label: "Autumn",
     accent: "#e07230",
     keyboardBase: "#d4682a",
+    lightColor: "#ff9d66",
     particle: "rgba(255, 190, 140, 0.7)",
     particleHalo: "rgba(210, 110, 50, 0.25)",
   },
   {
     id: "winter",
-    label: "Invierno",
+    label: "Winter",
     accent: "#7aa6d0",
     keyboardBase: "#6cadef",
+    lightColor: "#8fc4f7",
     particle: "rgba(220, 235, 252, 0.75)",
     particleHalo: "rgba(166, 197, 228, 0.18)",
   },

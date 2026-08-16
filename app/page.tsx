@@ -25,7 +25,7 @@ type Localised = { ar: string; en: string };
 
 type Project = ProjectDetail & {
   align: "left" | "right";
-  section: "project1" | "project2" | "project3" | "project4";
+  section: "project1" | "project2" | "project3" | "project4" | "project5";
 };
 
 const projects: Project[] = [
@@ -88,6 +88,34 @@ const projects: Project[] = [
   {
     num: "03",
     name: {
+      ar: "منصة معالجة بيانات IoT والتحليلات اللحظية",
+      en: "Real-Time IoT Telemetry & Analytics Platform",
+    },
+    stack: [
+      "Python",
+      "Event-Driven Pipelines",
+      "IoT Telemetry",
+      "AI/ML Models",
+      "PostgreSQL",
+      "Calculated Fields",
+    ],
+    desc: {
+      ar: "مسار معالجة بيانات لحظي عالي الأداء لاستقبال وتحليل بيانات أجهزة IoT وتوليد تحليلات تنبؤية باستخدام نماذج الذكاء الاصطناعي.",
+      en: "Scalable real-time data ingestion pipeline for high-frequency IoT device telemetry, custom transformation rules, and AI/ML predictive analytics.",
+    },
+    details: {
+      ar: "نظام معالجة بيانات لحظي عالي التردد بني باستخدام معمارية Event-Driven. يتضمن تحويل البيانات فور ورودها، حقول محسوبة مخصصة، لوحات قياس سريعة الاستجابة، واختبارات برمجية شاملة بلغة Python مع دمج نماذج التعلم الآلي للتنبؤ بالأداء ومنع الأعطال.",
+      en: "High-throughput event-driven IoT ingestion pipeline engineered at Smart Cloud. Processes streaming device telemetry on the fly with custom transformation logic and calculated fields. Integrated Python AI/ML models into the backend pipeline for predictive analytics, anomaly detection, and automated decision-making.",
+    },
+    github: "https://github.com/SuleimanKh97",
+    highlights: ["python", "postgresql"],
+    badge: { ar: "نظام بيانات لحظي", en: "Real-Time Pipeline" },
+    align: "left",
+    section: "project3",
+  },
+  {
+    num: "04",
+    name: {
       ar: "نظام إدارة الموارد البشرية (HR)",
       en: "HR Management System",
     },
@@ -109,11 +137,11 @@ const projects: Project[] = [
     },
     github: "https://github.com/SuleimanKh97",
     highlights: ["dotnet", "bootstrap", "javascript"],
-    align: "left",
-    section: "project3",
+    align: "right",
+    section: "project4",
   },
   {
-    num: "04",
+    num: "05",
     name: {
       ar: "منصة المكتبة واشتراكات الكتب (UI/UX)",
       en: "Bookstore & Library Subscription Platform (UI/UX)",
@@ -135,8 +163,8 @@ const projects: Project[] = [
     },
     highlights: ["figma"],
     badge: { ar: "نموذج Figma تفاعلي", en: "Figma Prototype" },
-    align: "right",
-    section: "project4",
+    align: "left",
+    section: "project5",
   },
 ];
 
@@ -452,7 +480,10 @@ export default function Home() {
                 style={{ ["--d" as string]: "700ms" }}
               >
                 <a
-                  href={`mailto:${EMAIL}`}
+                  href="/Suleiman_Khashashneh.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Suleiman_Khashashneh.pdf"
                   data-cursor="hover"
                   data-magnetic
                   className="frost-btn frost-btn--primary"
